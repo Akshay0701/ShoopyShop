@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".Login">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="-70dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/cardback"
+        android:src="@drawable/cireclebackground2"
+        android:layout_height="600dp"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:text="Login"
+        android:textSize="25dp"
+        android:id="@+id/login_text"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/login_text"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/shoppylogo"/>
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/logo"
+        android:background="@null"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/log_emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/edittextdesign"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/log_passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/edittextdesign"
+            android:hint="Password"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+
+        <TextView
+            android:id="@+id/recover_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_submit"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="9dp"
+            android:layout_marginTop="20dp"
+            android:text="Recover Password.."
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/login_submit"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/loginbtn"
+            android:layout_marginTop="40dp"/>
+
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/google_loginbt"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/recover_pass"
+            android:layout_marginTop="20dp"></com.google.android.gms.common.SignInButton>
+
+        <TextView
+            android:id="@+id/not_already_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Not Already Register ?.."
+
+
+            android:textColor="@color/colorPrimaryFadded" />
+
+        <TextView
+            android:id="@+id/are_u_Admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/already_account"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Are You Admin ?.."
+            android:layout_marginBottom="-10dp"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

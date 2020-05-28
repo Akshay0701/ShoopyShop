@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="305dp">
+                <LinearLayout
+                    android:background="@drawable/buttondesign"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:id="@+id/backimg"
+                            android:scaleType="centerCrop"
+                            android:layout_height="match_parent">
+
+                        </ImageView>
+                        <ImageView
+                            android:layout_marginTop="45dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="150dp"
+                            android:id="@+id/profileIv"
+                            android:layout_centerInParent="true"
+                            android:layout_height="150dp"
+                            android:src="@drawable/profileicon"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/nameTv"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/profileIv"
+                            android:text=""
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"
+
+                            android:textSize="21sp"/>
+                        <Button
+                            android:background="@drawable/edit"
+                            android:layout_margin="10dp"
+                            android:id="@+id/fab_edit"
+                            android:padding="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"></Button>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:visibility="gone"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        ></TextView>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:text="dark/light Mode"
+                        android:id="@+id/dark_light_mode"
+                        android:visibility="gone"
+                        android:textColor="@color/colorAccent"
+                        android:layout_height="wrap_content"></RadioButton>
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:id="@+id/switchCompat"
+                        android:textColor="@color/colorAccent"
+                        android:text="dark light mode"
+                        android:layout_height="wrap_content"></Switch>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profileicon"/>
+
+                    <EditText
+                        android:id="@+id/nameEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/editbox2"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="30dp"
+                        android:text="Akshay Jadhav"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></EditText>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/mailicon"/>
+
+                    <EditText
+                        android:id="@+id/emailEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/editbox2"
+                        android:paddingLeft="30dp"
+                        android:fontFamily="serif-monospace"
+                        android:text="mail@gmail.com"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></EditText>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/phoneicon"/>
+
+                    <EditText
+                        android:id="@+id/phonesEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/editbox2"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="30dp"
+                        android:text="9082784928"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></EditText>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/recover_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/login_submit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="9dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="monospace"
+                    android:text="Recover Password.."
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/updateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/savebtn"
+                android:lineSpacingExtra="8sp"
+                android:text=""
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

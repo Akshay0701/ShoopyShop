@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardMaxElevation="15dp"
+            android:id="@+id/topban"
+            app:cardPreventCornerOverlap="true"
+            app:cardElevation="15dp"
+            android:layout_height="wrap_content">
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"></ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            android:layout_below="@+id/topban"
+            app:cardMaxElevation="10dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:id="@+id/viewpager"
+                android:layout_height="200dp"></androidx.viewpager.widget.ViewPager>
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="-330dp"
+            android:src="@drawable/cireclebackground2"
+            android:layout_height="600dp"></ImageView>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/banner"
+            android:layout_height="wrap_content"></ImageView>
+
+
+        <!-- this is activity -->
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Activity's"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:typeface="sans"
+            android:layout_height="wrap_content"></TextView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:contentPadding="10dp"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp"
+            android:layout_height="wrap_content">
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:id="@+id/mn"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/recyclerView_menu"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_height="wrap_content"/>
+            </androidx.core.widget.NestedScrollView>
+
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Trending"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:typeface="sans"
+            android:layout_height="wrap_content"></TextView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/cireclebackground2"
+                android:orientation="vertical"
+                android:padding="0dp"
+                android:layout_height="650dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/recyclerView_trend"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginTop="80dp"
+                    android:background="@null"
+                    android:layout_height="550dp"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/banner5"
+            android:layout_height="150dp"></ImageView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/banner4"
+            android:layout_height="wrap_content"></ImageView>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

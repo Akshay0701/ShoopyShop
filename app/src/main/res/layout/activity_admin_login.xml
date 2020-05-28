@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLogin">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/shoppylogo"/>
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/logo"
+        android:background="@null"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/log_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/edittextdesign"
+            android:fontFamily="serif-monospace"
+            android:hint="User"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/log_passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/edittextdesign"
+            android:fontFamily="serif-monospace"
+            android:hint="Password"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+
+        <Button
+            android:id="@+id/login_submit"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/log_passwordEt"
+            android:textColor="#fff"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttondesign"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:text="Admin" />
+
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/google_loginbt"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/recover_pass"
+            android:layout_marginTop="20dp"></com.google.android.gms.common.SignInButton>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
